@@ -7,7 +7,7 @@ import(
 )
 
 func RegisterApi()  {
-    e :=echo.New()
+    //e :=echo.New()
     e.GET("/",func (c echo.Context) error {
         return c.String(http.StatusOK,"hello db")
     })
